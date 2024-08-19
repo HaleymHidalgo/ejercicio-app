@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input
+  type="email"
+  fill="solid"
+  label="Email"
+  labelPlacement="floating"
+  helperText="Enter a valid email"
+  errorText="Invalid email"
+  ngModel
+  email
+  ></ion-input>
+  <br/>
+  <ion-content [fullscreen]="true">
+    <ion-input
+    type="password"
+    fill="solid"
+    label="Password"
+    labelPlacement="floating"
+    helperText="Enter a valid Password"
+    errorText="Invalid password"
+    ngModel
+    email
+  ></ion-input>
+
+  <ion-button color="primary" (click)="irPagina()">
+    Acceder
+  </ion-button>
+
+</ion-content>
